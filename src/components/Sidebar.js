@@ -9,7 +9,7 @@ const Sidebar = ({ isOpen, setIsOpen }) => {
 				<IoMdClose />
 			</button>
 			<div className='sidebar-container'>
-				<Links styleClass='sidebar-links' />
+				<Links styleClass='sidebar-links'></Links>
 			</div>
 		</aside>
 	);
