@@ -9,10 +9,10 @@ const PostsPage = ({ data }) => {
 		allMdx: { nodes: posts },
 	} = data;
 	return (
-		<>
+		<Layout>
 			<Hero />
 			<Posts posts={posts} title='all posts' />
-		</>
+		</Layout>
 	);
 };
 
@@ -26,6 +26,7 @@ export const query = graphql`
 					date(formatString: "MMMM Do, YY")
 					slug
 					readTime
+					category
 					image {
 						childImageSharp {
 							fluid {

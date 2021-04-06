@@ -27,6 +27,7 @@ export const query = graphql`
 					date(formatString: "MMMM Do, YY")
 					slug
 					readTime
+					category
 					image {
 						childImageSharp {
 							fluid {
